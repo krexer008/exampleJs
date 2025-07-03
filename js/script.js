@@ -1,5 +1,5 @@
 "use strict";
-
+/*
 const personalMovieDB = {
     count: 0,
     movies: {},
@@ -46,20 +46,6 @@ const personalMovieDB = {
     },
     writeYourGenres: () => {
         for (let i = 1; i < 2; i++) {
-            //     let genre = prompt(`Ваш любимый жанр под номером ${i}?`);
-
-            //     if (genre === '' || genre == null) {
-            //         console.log('Вы ввели некоректные данные!');
-            //         i--;
-            //     } else {
-            //         personalMovieDB.genres[i - 1] = genre;
-            //     }
-            // }
-
-            // personalMovieDB.genres.forEach((genre, i) => {
-            //     console.log(`Любимый жанр #${i+1} - это ${genre}`);
-            // });
-
             let genres = prompt(`Ваши любимые жанры через запятую`).toLocaleLowerCase();
 
             if (genres === '' || genres == null) {
@@ -94,3 +80,21 @@ personalMovieDB.toggleVisibleMyDB();
 
 personalMovieDB.showMyDB(personalMovieDB.privat);
 personalMovieDB.writeYourGenres();
+*/
+
+const box = document.getElementById("box");
+
+const btns = document.getElementsByTagName("button");
+
+const circls = document.getElementsByClassName("circle");
+
+const hearts = document.querySelectorAll(".heart");
+
+hearts.forEach((item) => {
+  console.log(item);
+});
+
+//по селектору
+const oneHeart = document.querySelector("button");
+
+console.log(oneHeart);

@@ -1,0 +1,70 @@
+body {
+    display: block;
+    margin: 8px;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    background: red;
+}
+
+button {
+    margin-top: 10px;
+    width: 80px;
+    height: 30px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.circle {
+    margin-top: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    background: blue;
+}
+
+.wrapper {
+    display: flex;
+    margin-left: 10px;
+    gap: 100px;
+}
+
+.heart {
+    position: relative;
+    width: 50px;
+    height: 87px;
+    background-color: red;
+    /*box-shadow: -1px 0px 2px #444;*/
+    -webkit-border-radius: 25px 25px 0 0;
+    -moz-border-radius: 25px 25px 0 0;
+    border-radius: 25px 25px 0 0;
+    /* Определяем угол наклона */
+    -webkit-transform: rotate(315deg);
+    -moz-transform: rotate(315deg);
+    -ms-transform: rotate(315deg);
+    -o-transform: rotate(315deg);
+    transform: rotate(315deg);
+}
+/* Формируем правую часть */
+.heart:before {
+    position: absolute;
+    width: 87px;
+    height: 50px;
+    left: 0;
+    bottom: 0;
+    content: "";
+    background-color: red;
+    /*box-shadow: 0px 3px 3px #444444;*/
+    -webkit-border-radius: 25px 25px 0 0;
+    -moz-border-radius: 25px 25px 0 0;
+    border-radius: 0 25px 25px 0;
+}
+/*
+/* Убираем тень при наведении */
+.heart:hover:before,
+.heart:hover {
+    box-shadow: none;
+}
